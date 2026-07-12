@@ -1,0 +1,239 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #09090F;
+    color: #FFFFFF;
+    font-family: var(--font-inter), sans-serif;
+  }
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(24, 24, 37, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(42, 42, 56, 0.4);
+}
+
+.glass-card {
+  background: rgba(24, 24, 37, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(42, 42, 56, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  background: rgba(24, 24, 37, 0.65);
+  border-color: rgba(108, 62, 255, 0.4);
+  box-shadow: 0 8px 30px rgba(108, 62, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.astro-dashboard {
+  width: 100%;
+  min-height: 42vh;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(180deg, rgba(17, 17, 34, 0.92), rgba(8, 8, 18, 0.96)),
+    #09090f;
+  color: #ffffff;
+}
+
+@media (min-width: 1024px) {
+  .astro-dashboard {
+    width: 35%;
+    min-width: 360px;
+    height: calc(100vh - 64px);
+    min-height: 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 0;
+  }
+}
+
+.astro-panel {
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 8px;
+  background: rgba(18, 18, 34, 0.62);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+  padding: 0.85rem;
+}
+
+.astro-panel-title {
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.astro-icon-btn {
+  display: inline-flex;
+  height: 2rem;
+  width: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: #d8cdfb;
+  transition: all 160ms ease;
+}
+
+.astro-icon-btn:hover {
+  border-color: rgba(246, 215, 122, 0.5);
+  color: #ffffff;
+}
+
+.astro-action-btn {
+  display: inline-flex;
+  height: 2rem;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0 0.6rem;
+  font-size: 0.7rem;
+  color: #d8cdfb;
+}
+
+.astro-action-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.astro-empty {
+  display: grid;
+  min-height: 280px;
+  place-items: center;
+  gap: 0.5rem;
+  border: 1px dashed rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1F1B3A;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6C3EFF;
+}
+
+/* Typing Indicator Animation */
+@keyframes typing-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-typing-1 {
+  animation: typing-bounce 1s infinite 0.1s;
+}
+
+.animate-typing-2 {
+  animation: typing-bounce 1s infinite 0.2s;
+}
+
+.animate-typing-3 {
+  animation: typing-bounce 1s infinite 0.3s;
+}
+
+/* Shimmer Loading Animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #181825 25%, #222235 50%, #181825 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Print/PDF-ready styling */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-family: Georgia, serif !important;
+  }
+  
+  /* Hide sidebar, headers, input boxes, and buttons */
+  aside, 
+  nav, 
+  header, 
+  footer, 
+  button, 
+  form, 
+  .no-print {
+    display: none !important;
+  }
+
+  /* Make chat bubble content fit beautifully */
+  main {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .print-header {
+    display: block !important;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 1rem;
+  }
+
+  .print-header h1 {
+    font-size: 24pt;
+    font-weight: bold;
+    color: #111111;
+  }
+
+  .print-header p {
+    font-size: 10pt;
+    color: #555555;
+    margin-top: 0.5rem;
+  }
+
+  .chat-bubble-print {
+    margin-bottom: 1.5rem;
+    page-break-inside: avoid;
+  }
+
+  .chat-bubble-print.role-user {
+    border-left: 3px solid #666666;
+    padding-left: 1rem;
+    margin-left: 0;
+    background: #f9f9f9 !important;
+  }
+
+  .chat-bubble-print.role-model {
+    border-left: 3px solid #000000;
+    padding-left: 1rem;
+    margin-left: 0;
+  }
+}

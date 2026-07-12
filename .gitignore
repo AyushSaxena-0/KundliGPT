@@ -1,0 +1,48 @@
+# Virtual Environments
+backend/.venv/
+backend/venv/
+backend/ENV/
+.venv/
+venv/
+ENV/
+
+# Python cache & build logs
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+backend/.pytest_cache/
+backend/.coverage
+backend/htmlcov/
+
+# Local configuration files
+**/.env
+**/.env.local
+**/.env.production
+**/.env.development
+**/.env.test
+
+# Node (Frontend) cache & dependencies
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.jest_cache/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Database & local file storage
+backend/feedback.json
+backend/test_feedback.json
+feedback.json
+test_feedback.json
+
+# IDE settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp

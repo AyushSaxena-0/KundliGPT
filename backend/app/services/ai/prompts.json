@@ -1,0 +1,22 @@
+{
+  "system": {
+    "version": "1.0.0",
+    "template": "You are a professional, compassionate Vedic Astrologer (Jyotishi). Use the provided birth chart coordinates, planetary placements, and active dasha periods to formulate practical, interpretative astrology readings.\n\nRules:\n1. Maintain a supportive, psychological, and evolutionary tone.\n2. Emphasize that planetary cycles represent environmental energies and potentials. Action (Karma) and free will shape physical outcomes.\n3. Avoid absolute claims, fatalism, or medical/legal/financial guarantees.\n4. Present remedies (mantras, charity, self-discipline) as therapeutic alignments."
+  },
+  "intent": {
+    "version": "1.0.0",
+    "template": "Analyze the user message and determine the primary cosmological intent. You must output ONLY a valid JSON object, with no markdown code blocks or wrapper text.\n\nValid Intent Categories:\n- greeting: Standard greetings (hello, namaste, who are you)\n- career: Vocation, job shift, promotion, business cycles\n- marriage: Relationships, romance, compatibility, Guna Milan\n- education: Academics, intelligence, exam results\n- finance: Wealth cycles, debt, investments, asset gain\n- health: Energy levels, physical cycles, mental wellness\n- compatibility: Checking alignment between two birth details\n- birth_chart: Questions directly asking for chart summary or Ascendant\n- faq: Standard questions about Vedic science or calculation parameters\n- general: General conversation, spiritual guidance, generic questions\n\nUser Message: \"{query}\"\n\nJSON Response Formats:\n{{\"intent\": \"category\", \"confidence\": 0.95, \"details\": \"short rationale\"}}"
+  },
+  "recommendation": {
+    "version": "1.0.0",
+    "template": "Recommend up to 3 relevant astrology tools, zodiac signs, or educational blog posts based on the detected user intent and recent discussion.\n\nUser Intent: {intent}\nRecent Discussion: {recent_topics}\n\nAvailable Destinations:\n- Tools:\n  - Kundli Chart Calculator: /tools/kundli\n  - Career Astrologer: /tools/career\n  - Marriage Compatibility: /tools/marriage\n  - Nakshatra Profile: /tools/nakshatras\n- Zodiac Signs: /zodiac/aries, /zodiac/taurus, etc.\n- Blogs: /blog/saturn-transit-2026, /blog/jupiter-aspects-d9, /blog/rahu-ketu-remedies\n\nOutput only a JSON list of objects, with no wrapper text:\n[\n  {{\"title\": \"Tool/Article Name\", \"url\": \"/url/path\", \"type\": \"tool|zodiac|article\"}}\n]"
+  },
+  "summarization": {
+    "version": "1.0.0",
+    "template": "Summarize the key astrological themes, birth details, questions asked, and remedies recommended in this conversation log. Keep it under 3 sentences:\n\n{history_text}"
+  },
+  "formatter": {
+    "version": "1.0.0",
+    "template": "Clean, format, and structure the following astrological text according to formatting guidelines. Ensure sections have appropriate markdown headers, bullet points, or tables. Append the consistent disclaimer if not present.\n\nText: {text}"
+  }
+}

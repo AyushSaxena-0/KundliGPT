@@ -1,0 +1,24 @@
+# Python virtual environments
+.venv/
+venv/
+ENV/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local configuration files
+.env
+
+# Local data stores / mock databases
+feedback.json
+test_feedback.json
+
+# IDE settings
+.vscode/
+.idea/

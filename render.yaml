@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: ai-vedic-astrologer-backend
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: DEBUG
+        value: "false"
+      - key: APP_NAME
+        value: "AI Vedic Astrologer"
+      - key: GEMINI_API_KEY
+        sync: false # Require manual configuration in dashboard
+        description: "Your Google Gemini API Key from Google AI Studio"
+      - key: ALLOWED_ORIGINS
+        sync: false # Require manual configuration in dashboard
+        description: "Comma-separated list of allowed origins (e.g. https://your-app.pages.dev)"
+      - key: BACKEND_URL
+        sync: false
+        description: "The public URL of this Render web service after creation"
