@@ -4,6 +4,13 @@ Welcome to the **AI Vedic Astrologer** codebase. This is a fully modular, produc
 
 This guide walks you through deploying the entire application on **100% Free Tiers** (Vercel/Cloudflare Pages, Render Free, and Gemini API Free) for a total monthly cost of **₹0** (no credit card required).
 
+<img width="1918" height="857" alt="image" src="https://github.com/user-attachments/assets/7a1e43f4-61e0-4468-a6a1-3c61cdd575dd" />
+
+<img width="1915" height="860" alt="image" src="https://github.com/user-attachments/assets/7ff12739-4803-41b4-acfe-fa38458555d4" />
+
+![Uploading image.png…]()
+
+
 ---
 
 ## Architecture Overview
