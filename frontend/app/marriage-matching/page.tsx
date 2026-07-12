@@ -506,14 +506,14 @@ export default function MarriageMatchingPage() {
                     <div className="flex gap-1 shrink-0">
                       <Button 
                         variant={activeChartTab === "partner_a" ? "primary" : "secondary"} 
-                        size="xs" 
+                        size="sm" 
                         onClick={() => setActiveChartTab("partner_a")}
                       >
                         {result.partner_a.name}
                       </Button>
                       <Button 
                         variant={activeChartTab === "partner_b" ? "primary" : "secondary"} 
-                        size="xs" 
+                        size="sm" 
                         onClick={() => setActiveChartTab("partner_b")}
                       >
                         {result.partner_b.name}
