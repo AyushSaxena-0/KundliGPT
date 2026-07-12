@@ -1,5 +1,7 @@
 # AI Vedic Astrologer (₹0 Complete Deployment Guide)
 
+**Live Demo**: [https://kundli-j93qb0ok9-ayushsaxena-0s-projects.vercel.app](https://kundli-j93qb0ok9-ayushsaxena-0s-projects.vercel.app)
+
 Welcome to the **AI Vedic Astrologer** codebase. This is a fully modular, production-ready fullstack application consisting of a **FastAPI backend** (Python 3.12 + Google Gemini API) and a **Next.js frontend** client (TypeScript + TailwindCSS + Framer Motion).
 
 This guide walks you through deploying the entire application on **100% Free Tiers** (Vercel/Cloudflare Pages, Render Free, and Gemini API Free) for a total monthly cost of **₹0** (no credit card required).
