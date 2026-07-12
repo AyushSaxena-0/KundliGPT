@@ -325,3 +325,9 @@ The platform’s decoupled modules make it ready to add premium features:
 3. **Appointment Scheduling**: Link Cal.com or Calendly integrations to astrologer profiles.
 4. **Astrologer Marketplace**: Create an onboarding flow for human astrologers, routing conversations away from the AI pipeline using a queue state (`assigned_to_human: true`).
 
+---
+
+## 🎓 Educational Use Disclaimer
+
+This repository and application are developed strictly for educational and cultural demonstration purposes. The astronomical calculations, compatibility analysis, and AI-generated interpretations provided herein are intended to illustrate full-stack integration patterns, prompt engineering methodologies, and predictive algorithm mockups in software engineering. They do not constitute professional advice or guaranteed predictions. Users should exercise critical judgment and discretion.
+
