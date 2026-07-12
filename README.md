@@ -4,6 +4,29 @@ Welcome to the **AI Vedic Astrologer** codebase. This is a fully modular, produc
 
 This guide walks you through deploying the entire application on **100% Free Tiers** (Vercel/Cloudflare Pages, Render Free, and Gemini API Free) for a total monthly cost of **₹0** (no credit card required).
 
+<img width="1918" height="857" alt="image" src="https://github.com/user-attachments/assets/7a1e43f4-61e0-4468-a6a1-3c61cdd575dd" />
+
+<img width="1915" height="860" alt="image" src="https://github.com/user-attachments/assets/7ff12739-4803-41b4-acfe-fa38458555d4" />
+
+<img width="1917" height="862" alt="image" src="https://github.com/user-attachments/assets/94ceb266-1b1d-4910-8c24-4d91225c50b0" />
+
+<img width="1918" height="862" alt="image" src="https://github.com/user-attachments/assets/ce87925e-8934-4989-b289-db5e954f1fc5" />
+
+<img width="1918" height="857" alt="image" src="https://github.com/user-attachments/assets/ef600730-2537-43ff-b4c1-08e446002b24" />
+
+<img width="668" height="785" alt="image" src="https://github.com/user-attachments/assets/e90944bf-2499-4b93-bc73-3f3c38f9bdd4" />
+
+<img width="1918" height="842" alt="image" src="https://github.com/user-attachments/assets/24f0a71b-d362-4679-943d-5f337bc93085" />
+
+<img width="1918" height="847" alt="image" src="https://github.com/user-attachments/assets/41d92dbb-10f0-4287-a1f5-b5922da776f3" />
+
+<img width="1917" height="858" alt="image" src="https://github.com/user-attachments/assets/3d0f3936-804f-40d7-95c6-d243f192d4b7" />
+
+<img width="1918" height="857" alt="image" src="https://github.com/user-attachments/assets/ec17260d-e185-48ca-88aa-d67c15d0e3ba" />
+
+<img width="1918" height="862" alt="image" src="https://github.com/user-attachments/assets/22401af8-309c-40c7-82fc-a418b620ac48" />
+
+
 ---
 
 ## Architecture Overview
